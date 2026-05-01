@@ -24,7 +24,7 @@ function hashPw(pw) { return crypto.createHash('sha256').update(pw+'siha_salt_20
 function createMailer() {
   return nodemailer.createTransport({
     host: 'smtp-relay.brevo.com',
-    port: 587,
+    port: 465,
     secure: false,
     auth: {
       user: process.env.BREVO_LOGIN || 'a9de1d001@smtp-brevo.com',
